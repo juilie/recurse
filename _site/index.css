@@ -1,0 +1,22 @@
+body, html {
+    background-color: antiquewhite;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+main {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+hr {
+    width: 50%;
+    color: rgb(192, 163, 125);
+}
+
+article {
+    border: 2px rgb(195, 154, 102) inset;
+    padding: 0px 10px;
+}
