@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-23T17:53:42-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pode Central Blogipode</title><subtitle>Julie Bodian&apos;s Blog</subtitle><author><name>Julie Bodian</name></author><entry><title type="html">Write Inkspot, not Game of Life</title><link href="http://localhost:4000/jekyll/update/2024/02/23/inkspot.html" rel="alternate" type="text/html" title="Write Inkspot, not Game of Life" /><published>2024-02-23T12:30:48-05:00</published><updated>2024-02-23T12:30:48-05:00</updated><id>http://localhost:4000/jekyll/update/2024/02/23/inkspot</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/02/23/inkspot.html"><![CDATA[<p>Last Spring I was dawdling in a <a href="https://www.greymatterbookstore.com/">bookstore</a>, and happened across this <a href="https://mitpress.mit.edu/9780262526319/cellular-automata-machines/">1987 book</a> about cellular automata. I had recently begun learning some graphics programming and thought this would be a great source of prompts. I gazed upon the book, which provided a sort of cellular automata version of “Hello, World”…no, not <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway’s Game of Life</a> - Inkspot! Inkspot was the perfect hook - it has basically one rule that when implemented made me feel like a genius, despite doing very little. I can’t ask for much more out of a first project!</p>
+---
+layout: post
+title:  "Write Inkspot, not Game of Life"
+date:   2024-02-23 12:30:48 -0500
+categories: jekyll update
+---
 
-<p>There are a lot of different things someone might want out of a cellular automata tutorial, but for me I was looking for low effort, high aesthetic output. Game of Life is a beautiful thing, it is <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing complete</a>, we live in awe of its complexity, but sometimes…for me… it’s just not as fun to watch as a splotch of ink growing…that’s all.</p>
+Last Spring I was dawdling in a [bookstore](https://www.greymatterbookstore.com/), and happened across this [1987 book](https://mitpress.mit.edu/9780262526319/cellular-automata-machines/) about cellular automata. I had recently begun learning some graphics programming and thought this would be a great source of prompts. I gazed upon the book, which provided a sort of cellular automata version of "Hello, World"...no, not [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) - Inkspot! Inkspot was the perfect hook - it has basically one rule that when implemented made me feel like a genius, despite doing very little. I can't ask for much more out of a first project!
 
-<p>Game of Life isn’t really that much more complicated to implement, in fact Inkspot is considered “<a href="https://en.wikipedia.org/wiki/Life-like_cellular_automaton">Life-like</a>”, and has even been given the less cute name “<a href="https://en.wikipedia.org/wiki/Life_without_Death">Life without Death</a>” after first being published in the book, but check this out!</p>
+There are a lot of different things someone might want out of a cellular automata tutorial, but for me I was looking for low effort, high aesthetic output. Game of Life is a beautiful thing, it is [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness), we live in awe of its complexity, but sometimes...for me... it's just not as fun to watch as a splotch of ink growing...that's all.
 
-<h2 id="inkspot-rules">Inkspot Rules</h2>
+Game of Life isn't really that much more complicated to implement, in fact Inkspot is considered "[Life-like](https://en.wikipedia.org/wiki/Life-like_cellular_automaton)", and has even been given the less cute name "[Life without Death](https://en.wikipedia.org/wiki/Life_without_Death)" after first being published in the book, but check this out!
+
+## Inkspot Rules
 <p style="text-align: center; font-weight: bold"> If a cell has 3 neighbors, that cell is alive. All cells stay alive. That's all!</p>
 <div id="Plain" class="canvas-div" style="width:500px; height:500px;">
 </div>
-<p>I think the simplicity of this rule leaves room for a beginner to intuitively grasp how to create rules for desired behaviors. The goal here is to understand how a few simple rules can create a dramatic visual effect.</p>
+I think the simplicity of this rule leaves room for a beginner to intuitively grasp how to create rules for desired behaviors. The goal here is to understand how a few simple rules can create a dramatic visual effect.
 <p style="text-align: center; font-weight: bold">What if the cells gain color the longer they're alive?</p>
 <div id="Age" class="canvas-div" style="width:500px; height:500px; ">
 </div>
@@ -19,7 +26,7 @@
 <p style="text-align: center; font-weight: bold;">I'd love to see other variations.</p>
 
 Ultimately this is a matter of aesthetic and personal preference. What are you trying to learn? I think if you are writing your first cellular automata, with the intrinsic motivation of making cool graphics, implement Inkspot. To me, Inkspot leaves room for expanding its rules based on intuition, teaching the beginner how to use rules to describe a behavior they'd like to see. 
-<br /><br />
+<br><br>
 I'd love to see more tutorials for Inkspot (this wasn't exactly a tutorial), and other simple cellular automata. There can be a tendency for beginner tutorials in all subjects to stagnate around the same few examples, which sometimes I find discouraging as a learner. This is why I'm trying to throw Inkspot into the mix. Maybe one day it will get so popular it stops being exciting!
   <script type="importmap">
     {
@@ -248,7 +255,7 @@ I'd love to see more tutorials for Inkspot (this wasn't exactly a tutorial), and
       }
           </script>
           
-<script type="module">
+<script type=module>
     import * as THREE from 'three';
 
 class JulieShader {
@@ -501,4 +508,3 @@ window.addEventListener('DOMContentLoaded', async () => {
     await Die.initialize()
 })
 </script>
-</p></p>]]></content><author><name>Julie Bodian</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Last Spring I was dawdling in a bookstore, and happened across this 1987 book about cellular automata. I had recently begun learning some graphics programming and thought this would be a great source of prompts. I gazed upon the book, which provided a sort of cellular automata version of “Hello, World”…no, not Conway’s Game of Life - Inkspot! Inkspot was the perfect hook - it has basically one rule that when implemented made me feel like a genius, despite doing very little. I can’t ask for much more out of a first project!]]></summary></entry></feed>

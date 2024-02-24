@@ -7,16 +7,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Recurse Blog</title>
+    <title>Technical Surplus</title>
+    <script src="./libraries/p5.min.js"></script>
 </head>
 
 <body>
-    <h1>Julie's Recurse Compost</h1>
+    <script src="background.js"></script>
+    <div id="sketch"></div>
+    <div id="controls-container"> </div>
     <main>
+        <h1>&#9964; ju1i3'5 Technical Surplus &#9964;</h1>
         {% for post in site.posts %}
         <article>
             <h2>{{post.title}}</h2>
             <p>{{post.excerpt}}</p>
+            <a class="read-more" href="{{post.url}}">Read more</a>
         </article>
         <hr>
         {% endfor %}

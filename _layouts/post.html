@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/post.css">
+    <title>{{ page.title }} | juli's BlogiPode</title>
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<!-- <script src="/libraries/p5.min.js"></script> -->
+
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+
+<body>
+    <!-- <script src="/background.js"></script> -->
+    <!-- <div id="sketch"></div> -->
+    <!-- <div id="controls-container"> </div> -->
+    <div class="site-button"><a href="/">&#9758; return to ju1i3's technical surplus &#9756;</a></div>
+    <main>
+
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+        <div class="signature">
+            <a href="/" style="cursor: pointer;"><p style="border: 1px outset; padding: 2px 5px;">... juili</p></a>
+            <p style="margin-left: auto; border: 1px dashed; padding: 2px;">{{ post.date | date: "%b %-d %Y" }}
+            </p>
+        </div>
+    </main>
+    <img src="/assets/images/sponge.png">
+</body>
+
+</html>
