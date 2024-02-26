@@ -36,7 +36,7 @@ canvas {
 }
 
 h1 {
-    width: 100vw;
+    width: calc(100vw - 24px);
 }
 
 h1,
@@ -103,4 +103,7 @@ article a {
 .read-more:hover {
     background-color: #05008e;
     border: 2px solid #05008e;
+}
+
+@media screen and (max-width: 600px) {    
 }

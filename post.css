@@ -6,6 +6,8 @@ html, body {
     line-height: 1.5;
     color: #333;
     background-color: rgb(114, 114, 114);
+    /* background-image: url(./assets//images/Screenshot\ 2024-02-24\ at\ 12.06.18\ PM.png); */
+    /* background-size: 10px; */
 }
 
 h1,h2 {
@@ -17,7 +19,6 @@ main {
     margin: 20px auto;
     padding: 20px;
     background-color: #e4e4e4;
-    /* color: whit; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
